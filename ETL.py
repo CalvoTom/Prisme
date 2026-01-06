@@ -14,19 +14,32 @@ TICKERS_MAP = {
 
 # Liste des champs que l'on veut garder pour le dashboard
 KEYS_TO_KEEP = [
-    # Identité
-    "symbol", "shortName", "longName", "fundFamily", "legalType",
-    # Devise & Prix
-    "currency", "netAssets", "navPrice", "regularMarketPrice",
-    # Performance
-    "ytdReturn",                # Rendement depuis le 1er Janvier
-    "threeYearAverageReturn",   # Rendement moyen 3 ans
-    "fiveYearAverageReturn",    # Rendement moyen 5 ans
-    "beta3Year",                # Indicateur de volatilité/risque
-    # Dividende
-    "yield", "dividendYield",
-    # Limites
-    "fiftyTwoWeekLow", "fiftyTwoWeekHigh"
+    # --- IDENTITÉ DU FONDS ---
+    "symbol",                  # Le ticker unique (ex: PE500.PA)
+    "shortName",               # Nom court (ex: Amundi PEA S&P 500)
+    "longName",                # Nom complet avec détails (Capitalisant/Distribuant)
+    "fundFamily",              # La société de gestion (ex: Amundi, BlackRock)
+    "legalType",               # Type juridique ("Exchange Traded Fund")
+
+    # --- VALORISATION & DEVISE ---
+    "currency",                # Devise de cotation (Doit être "EUR" pour nous)
+    "netAssets",               # Actifs sous gestion (Taille du fonds en €)
+    "navPrice",                # Valeur Nette d'Inventaire (Vraie valeur calculée du fonds)
+    "regularMarketPrice",      # Dernier prix payé sur le marché (Cotation temps réel)
+
+    # --- PERFORMANCE (KPIs) ---
+    "ytdReturn",               # Performance depuis le 1er Janvier (Year-To-Date)
+    "threeYearAverageReturn",  # Rendement moyen annualisé sur 3 ans (Tendance moyen terme)
+    "fiveYearAverageReturn",   # Rendement moyen annualisé sur 5 ans (Tendance long terme)
+    "beta3Year",               # Volatilité par rapport au marché ( >1 = plus risqué/agressif)
+
+    # --- DIVIDENDES ---
+    "yield",                   # Rendement courant (Souvent 0 pour les ETF Capitalisants)
+    "dividendYield",           # Taux de dividende annuel en % (KPI important pour le rendement cash)
+
+    # --- CONTEXTE DE PRIX (Jauges) ---
+    "fiftyTwoWeekLow",         # Prix le plus bas atteint sur 1 an (Support)
+    "fiftyTwoWeekHigh"         # Prix le plus haut atteint sur 1 an (Résistance)
 ]
 
 BASE_DIR = os.getcwd()
