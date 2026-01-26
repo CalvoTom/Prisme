@@ -1,2 +1,6 @@
 pandas
 yfinance
+pyarrow
+matplotlib
+seaborn
+notebook
