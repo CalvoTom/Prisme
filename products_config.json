@@ -1,0 +1,29 @@
+{
+  "S&P500_PEA": {
+    "ticker": "PE500.PA",
+    "type": "ETF",
+    "currency": "EUR"
+  },
+  "NASDAQ_PEA": {
+    "ticker": "PUST.PA",
+    "type": "ETF",
+    "currency": "EUR"
+  },
+  "CAC40_ETF": {
+    "ticker": "C40.PA",
+    "type": "ETF",
+    "currency": "EUR"
+  },
+  "EMERGING_PEA": {
+    "ticker": "PAEEM.PA",
+    "type": "ETF",
+    "currency": "EUR"
+  },
+  "EUROSTOXX_ETF": {
+    "ticker": "C50.PA",
+    "type": "ETF",
+    "currency": "EUR"
+  }
+}
+
+
