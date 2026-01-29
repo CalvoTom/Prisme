@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#0145e4"               # bleu électrique
+backgroundColor = "#ffffff"            # fond blanc
+secondaryBackgroundColor = "#e6f0ff"   # panels / sidebar bleu clair
+textColor = "#000000"                   # texte noir
+font = "sans serif"
