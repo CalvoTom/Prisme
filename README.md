@@ -81,4 +81,13 @@ L’application permet :
 
 ### Lancer l’application
 ```bash
-streamlit run src/app.py
+streamlit run src/streamlit-app.py
+```
+ou
+```bash
+python main.py
+```
+
+
+
+
